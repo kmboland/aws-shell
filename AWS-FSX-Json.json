@@ -1,0 +1,24 @@
+
+
+#aws fsx --region us-east-1 create-file-system --file-system-type WINDOWS --storage-capacity 32000 --storage-type SSD --security-group-ids "sg-0f99db04c59a9ade1" "sg-07d4c4c3f890d89ec" --subnet-ids "subnet-033c7fcf8a9d7e63d" "subnet-0d20ebb22329bbee4" --windows-configuration SelfManagedActiveDirectoryConfiguration='{DomainName="awskevin.com", OrganizationalUnitDistinguishedName="OU=AWSOU,DC=awskevin,DC=com",FileSystemAdministratorsGroup="FSx-Admins", UserName="FSxSvc",Password="#Xaeismske830", DnsIps=["10.0.0.10"]}',ThroughputCapacity=32
+
+{
+  "ActiveDirectoryId": "string",
+  "SelfManagedActiveDirectoryConfiguration": {
+    "DomainName": "awskevin.com",
+    "OrganizationalUnitDistinguishedName": "OU=AWSOU,DC=awskevin,DC=com",
+    "FileSystemAdministratorsGroup": "FSX-Admin",
+    "UserName": "string",
+    "Password": "string",
+    "DnsIps": ["string", ...]
+  },
+  "DeploymentType": "MULTI_AZ_1",
+  "PreferredSubnetId": "string",
+  "ThroughputCapacity": integer,
+  "WeeklyMaintenanceStartTime": "string",
+  "DailyAutomaticBackupStartTime": "string",
+  "AutomaticBackupRetentionDays": integer,
+  "CopyTagsToBackups": true|false,
+  "Aliases": ["string", ...]
+}
+
