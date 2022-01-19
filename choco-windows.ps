@@ -1,0 +1,45 @@
+Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))
+
+
+
+Choco install curl microsoft-windows-terminal  rdmfree notepadplusplus.install googlechrome microsoft-edge 7zip.install jre8 git.install  foxitreader putty.install sysinternals python3 wireshark nmap wget awscli powershell atom visualstudiocode fiddler iperf3 portqry winscp -y
+
+
+<#
+choco install awscli
+choco install notepadplusplus.install
+choco install chocolatey-windowsupdate.extension
+choco install powershell
+choco install googlechrome
+choco install 7zip.install
+choco install jre8
+choco install git.install
+choco install foxitreader
+choco install putty.install
+choco install sysinternals
+choco install dotnetfx
+choco install python3
+choco install curl
+choco install microsoft-teams.install
+choco install wireshark
+choco install nmap
+choco install treesizefree
+choco install wget
+choco install snagit
+choco install altools
+choco install github-desktop
+choco install gh
+choco install atom
+choco install visualstudiocode
+choco install sql-server-management-studio
+choco install openssl.light
+choco install slack
+choco install microsoft-windows-terminal
+choco install fiddler
+choco install goodsync
+choco install beyondcompare
+choco install iperf3
+choco install portqry
+ 
+choco install fiddler microsoft-windows-terminal slack openssl.light -y
+#>
